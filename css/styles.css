@@ -117,6 +117,7 @@
 .header, .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
   .logo-header {
@@ -128,6 +129,7 @@
     text-transform: uppercase;
     color: var(--cl-iris);
     font-style: normal;
+    margin-right: 76px;
   }
   
   .logo-header .logo-navy-blue {
@@ -135,7 +137,6 @@
   }
   
   .header-nav {
-    justify-content: space-between;
     display: flex;
     align-items: center
   }
@@ -169,6 +170,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cl-grey);
+    
   }
   
   .contact-link {
@@ -176,6 +178,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cl-grey);
+    display: flex;
+    gap: 40px;
   }
   
   /* HERO */
@@ -210,6 +214,7 @@
     display: block;
     min-width: 169px;
     height: 56px;
+    border: none;
     margin: 0 auto;
   }
   
@@ -236,10 +241,18 @@
     
   .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
   }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
   
   .team-member {
-  
+    width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
@@ -249,12 +262,14 @@
     text-align: center;
     color: rgb(var(--cl-subtle-text));
     padding: 32px 0;
+    margin-bottom: 8px;
   }
 
   /* Portfolio */
 
 
   .portfolio {
+    padding: 120px 0;
     text-align: center;
     line-height: 1.11;
     font-size: 36px;
@@ -267,10 +282,13 @@
   .portfolio-list {
     --items: 3;
     row-gap: calc(var(--col-gap) * 2);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
   .portfolio-title {
+    margin-bottom: 72px;
     font-family: var(--primary-font);
     font-size: 36px;
     font-weight: 500;
@@ -285,6 +303,7 @@
     text-align: left;
     --items: 3;
     row-gap: calc(var(--col-gap) * 2);
+    width: calc((100% - 48px) / 3)
   }
 
   .portfolio-content {
@@ -293,6 +312,10 @@
     border-color: var(--cornflower);
     padding: 32px 16px;
     border-top: none;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 
  .portfolio-item-title {
@@ -319,6 +342,7 @@
     text-decoration: none; 
     display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
   }
     
   .logo-footer .cloud {
