@@ -204,6 +204,7 @@ body {
   gap: var(--col-gap);
   
 }
+.values-title,
 .visually-hidden {
   position: absolute;
   width: 1px;
